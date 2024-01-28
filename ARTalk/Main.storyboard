@@ -180,7 +180,7 @@ Welcome
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="j1f-02-CPL"/>
+                                    <action selector="login:" destination="YLl-0j-dcc" eventType="touchUpInside" id="yX1-6z-Hwz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,6 +188,11 @@ Welcome
                         <color key="backgroundColor" red="0.2235293984" green="0.19607841970000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="zx3-m3-8St"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="GU4-QH-aVj" id="rao-j7-nja"/>
+                        <outlet property="password" destination="NMW-3y-gVu" id="Yz0-n3-mYx"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginAR" id="hqU-RE-t9f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrU-TY-DxO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

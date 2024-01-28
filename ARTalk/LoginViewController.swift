@@ -11,15 +11,28 @@ import FirebaseCore
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet var emailAddress: UITextField!
+    @IBOutlet var password: UITextField!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func login(_ sender: Any) {
+        if let email = emailAddress.text, let password = password.text {
+            FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password){
+                authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                }else{
+                    self.performSegue(withIdentifier: "loginAR" , sender: self)
+                }
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
