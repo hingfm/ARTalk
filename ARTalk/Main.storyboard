@@ -64,31 +64,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ARTalk" translatesAutoresizingMaskIntoConstraints="NO" id="Ugi-JB-Njz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ARTalk" translatesAutoresizingMaskIntoConstraints="NO" id="Ugi-JB-Njz">
                                 <rect key="frame" x="16" y="103" width="361" height="361"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ugi-JB-Njz" secondAttribute="height" multiplier="1:1" id="Pif-S0-YW0"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mII-5V-hS8">
-                                <rect key="frame" x="16" y="541" width="361" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mII-5V-hS8">
+                                <rect key="frame" x="25" y="573" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mII-5V-hS8" secondAttribute="height" multiplier="343:50" id="Dyv-De-C3y"/>
+                                </constraints>
                                 <color key="tintColor" red="0.66666666669999997" green="0.5450980392" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Login">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-up-vqr">
-                                <rect key="frame" x="16" y="647" width="361" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-up-vqr">
+                                <rect key="frame" x="25" y="643" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ce1-up-vqr" secondAttribute="height" multiplier="343:50" id="NeZ-Vu-DDz"/>
+                                </constraints>
                                 <color key="tintColor" red="0.66666666669999997" green="0.5450980392" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Register">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s7z-J7-ykj"/>
                         <color key="backgroundColor" red="0.2235293984" green="0.19607841970000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ugi-JB-Njz" firstAttribute="top" secondItem="s7z-J7-ykj" secondAttribute="top" id="12K-9c-1V9"/>
+                            <constraint firstItem="s7z-J7-ykj" firstAttribute="trailing" secondItem="mII-5V-hS8" secondAttribute="trailing" constant="25" id="3gP-Nn-CBt"/>
+                            <constraint firstItem="mII-5V-hS8" firstAttribute="leading" secondItem="s7z-J7-ykj" secondAttribute="leading" constant="25" id="Ccp-aZ-Rf9"/>
+                            <constraint firstItem="s7z-J7-ykj" firstAttribute="trailing" secondItem="ce1-up-vqr" secondAttribute="trailing" constant="25" id="ML8-Wq-J49"/>
+                            <constraint firstItem="ce1-up-vqr" firstAttribute="leading" secondItem="s7z-J7-ykj" secondAttribute="leading" constant="25" id="XHO-Gd-iVZ"/>
+                            <constraint firstItem="s7z-J7-ykj" firstAttribute="bottom" secondItem="ce1-up-vqr" secondAttribute="bottom" constant="125" id="czP-po-J47"/>
+                            <constraint firstItem="ce1-up-vqr" firstAttribute="top" secondItem="mII-5V-hS8" secondAttribute="bottom" constant="20" id="dG6-vX-uSL"/>
+                            <constraint firstItem="s7z-J7-ykj" firstAttribute="trailing" secondItem="Ugi-JB-Njz" secondAttribute="trailing" constant="16" id="t6i-CT-ccl"/>
+                            <constraint firstItem="Ugi-JB-Njz" firstAttribute="leading" secondItem="s7z-J7-ykj" secondAttribute="leading" constant="16" id="zLN-16-LM1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="l2L-Xo-uZD"/>
                 </viewController>
