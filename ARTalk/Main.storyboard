@@ -143,7 +143,7 @@ Account
                     </view>
                     <navigationItem key="navigationItem" id="VbP-dt-oM9">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Da0-jf-Jij">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="x0S-gw-JSR">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="x0S-gw-JSR">
                                 <rect key="frame" x="317" y="0.0" width="60" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -176,8 +176,17 @@ Account
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="vXF-HV-p26">
+                            <rect key="frame" x="0.0" y="168" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Delete All"/>
+                            <connections>
+                                <action selector="deleteAllBtn:" destination="ml0-P6-XNj" eventType="touchUpInside" id="4qO-Yq-wOC"/>
+                            </connections>
+                        </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="logId" id="VZO-ue-Avv" customClass="LogTableViewCell" customModule="ARTalk" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="logCell" id="VZO-ue-Avv" customClass="LogTableViewCell" customModule="ARTalk" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VZO-ue-Avv" id="4EJ-wH-vzO">

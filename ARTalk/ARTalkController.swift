@@ -104,15 +104,17 @@ class ARTalkController: UIViewController {
     }
     
     func createLog(_ log: String){
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone.current
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: "Log", in: context)
         let newLog = LogCoreData(entity: entity!, insertInto: context)
-        newLog.timestamp = ""
+        newLog.timestamp = formatter.string(from: Date())
         newLog.log = log
         do {
             try context.save()
-            logList.append(newLog)
         }
         catch {
             print("context save error")
