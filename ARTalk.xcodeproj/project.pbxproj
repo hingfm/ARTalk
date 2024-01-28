@@ -43,6 +43,7 @@
 		307D1EED2B66094E007EC3B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 307D1EEC2B66094E007EC3B2 /* GoogleService-Info.plist */; };
 		307D1EF42B664A62007EC3B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EF32B664A62007EC3B2 /* LoginViewController.swift */; };
 		307D1EF62B664B2B007EC3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EF52B664B2B007EC3B2 /* ViewController.swift */; };
+		307D1EF92B666715007EC3B2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EF72B66670F007EC3B2 /* RegisterViewController.swift */; };
 		4C823FE174B4AB8373CD427C /* Pods_ARTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCB420657605D37763FC225 /* Pods_ARTalkTests.framework */; };
 		BF9B505355F890AC4BAB8671 /* Pods_ARTalk_ARTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448C23D9CF0C7CC8C6FE0BD4 /* Pods_ARTalk_ARTalkUITests.framework */; };
 		CC443A4D294FF549009E8941 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC443A3C294FF549009E8941 /* Zip.swift */; };
@@ -193,6 +194,7 @@
 		307D1EEC2B66094E007EC3B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		307D1EF32B664A62007EC3B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		307D1EF52B664B2B007EC3B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		307D1EF72B66670F007EC3B2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3CFCBFAAF1C34B47E1D01BF5 /* Pods-ARTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk.release.xcconfig"; path = "Target Support Files/Pods-ARTalk/Pods-ARTalk.release.xcconfig"; sourceTree = "<group>"; };
 		3D9AD6DEA9DAC18A5430DE06 /* Pods-ARTalk-ARTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk-ARTalkUITests.release.xcconfig"; path = "Target Support Files/Pods-ARTalk-ARTalkUITests/Pods-ARTalk-ARTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4370651E47D0ADB8DD53A87A /* Pods_ARTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -502,6 +504,7 @@
 				307D1EC52B638FC9007EC3B2 /* AudioCaptureController.swift */,
 				307D1EF52B664B2B007EC3B2 /* ViewController.swift */,
 				307D1EF32B664A62007EC3B2 /* LoginViewController.swift */,
+				307D1EF72B66670F007EC3B2 /* RegisterViewController.swift */,
 				307D1EC72B638FCA007EC3B2 /* ARTalkController.swift */,
 				307D1EC82B638FCA007EC3B2 /* ARTalk.xcdatamodeld */,
 				307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */,
@@ -1039,6 +1042,7 @@
 				CCE9324C294FA45000D388A0 /* GLTFFunctions.swift in Sources */,
 				307D1EC12B638F85007EC3B2 /* simd_float4x4+Extensions.swift in Sources */,
 				307D1EBE2B638F85007EC3B2 /* simd_float3+Extensions.swift in Sources */,
+				307D1EF92B666715007EC3B2 /* RegisterViewController.swift in Sources */,
 				CCE93236294FA45000D388A0 /* GLTFVRM_VRMSpringBoneLogic.swift in Sources */,
 				307D1EA62B638F17007EC3B2 /* Entity.swift in Sources */,
 				307D1EBB2B638F85007EC3B2 /* CMSampleBuffer+Extensions.swift in Sources */,
