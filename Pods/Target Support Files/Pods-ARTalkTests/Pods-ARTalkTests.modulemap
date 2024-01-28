@@ -1,0 +1,6 @@
+framework module Pods_ARTalkTests {
+  umbrella header "Pods-ARTalkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

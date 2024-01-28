@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08D94A375DDDBD943F2DAF8A /* Pods_ARTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4370651E47D0ADB8DD53A87A /* Pods_ARTalk.framework */; };
 		307D1E892B638CC5007EC3B2 /* ggml-base.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 307D1E822B638CC5007EC3B2 /* ggml-base.en.bin */; };
 		307D1E8A2B638CC5007EC3B2 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = 307D1E842B638CC5007EC3B2 /* ggml.c */; };
 		307D1E8B2B638CC5007EC3B2 /* whisper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 307D1E852B638CC5007EC3B2 /* whisper.cpp */; };
@@ -39,6 +40,9 @@
 		307D1ED02B638FCB007EC3B2 /* ARTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EC82B638FCA007EC3B2 /* ARTalk.xcdatamodeld */; };
 		307D1ED12B638FCB007EC3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */; };
 		307D1ED32B638FEC007EC3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307D1ED22B638FEC007EC3B2 /* LaunchScreen.storyboard */; };
+		307D1EED2B66094E007EC3B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 307D1EEC2B66094E007EC3B2 /* GoogleService-Info.plist */; };
+		4C823FE174B4AB8373CD427C /* Pods_ARTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCB420657605D37763FC225 /* Pods_ARTalkTests.framework */; };
+		BF9B505355F890AC4BAB8671 /* Pods_ARTalk_ARTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448C23D9CF0C7CC8C6FE0BD4 /* Pods_ARTalk_ARTalkUITests.framework */; };
 		CC443A4D294FF549009E8941 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC443A3C294FF549009E8941 /* Zip.swift */; };
 		CC443A4E294FF549009E8941 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = CC443A3E294FF549009E8941 /* unzip.c */; };
 		CC443A4F294FF549009E8941 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = CC443A3F294FF549009E8941 /* zip.c */; };
@@ -147,6 +151,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		244D461AC8017D368C503949 /* Pods-ARTalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalkTests.debug.xcconfig"; path = "Target Support Files/Pods-ARTalkTests/Pods-ARTalkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		307D1E822B638CC5007EC3B2 /* ggml-base.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-base.en.bin"; sourceTree = "<group>"; };
 		307D1E832B638CC5007EC3B2 /* whisper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whisper.h; sourceTree = "<group>"; };
 		307D1E842B638CC5007EC3B2 /* ggml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ggml.c; sourceTree = "<group>"; };
@@ -183,6 +188,15 @@
 		307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307D1ED22B638FEC007EC3B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		307D1ED82B639491007EC3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		307D1EEC2B66094E007EC3B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3CFCBFAAF1C34B47E1D01BF5 /* Pods-ARTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk.release.xcconfig"; path = "Target Support Files/Pods-ARTalk/Pods-ARTalk.release.xcconfig"; sourceTree = "<group>"; };
+		3D9AD6DEA9DAC18A5430DE06 /* Pods-ARTalk-ARTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk-ARTalkUITests.release.xcconfig"; path = "Target Support Files/Pods-ARTalk-ARTalkUITests/Pods-ARTalk-ARTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4370651E47D0ADB8DD53A87A /* Pods_ARTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		448C23D9CF0C7CC8C6FE0BD4 /* Pods_ARTalk_ARTalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTalk_ARTalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE2C5D35D2D5D043E211160 /* Pods-ARTalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalkTests.release.xcconfig"; path = "Target Support Files/Pods-ARTalkTests/Pods-ARTalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		7098E2389E4B0F61F1AC3A63 /* Pods-ARTalk-ARTalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk-ARTalkUITests.debug.xcconfig"; path = "Target Support Files/Pods-ARTalk-ARTalkUITests/Pods-ARTalk-ARTalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9671F179327FBBA36348F6B2 /* Pods-ARTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk.debug.xcconfig"; path = "Target Support Files/Pods-ARTalk/Pods-ARTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		BFCB420657605D37763FC225 /* Pods_ARTalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC443A3B294FF549009E8941 /* Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zip.h; sourceTree = "<group>"; };
 		CC443A3C294FF549009E8941 /* Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
 		CC443A3E294FF549009E8941 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
@@ -289,6 +303,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08D94A375DDDBD943F2DAF8A /* Pods_ARTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +311,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C823FE174B4AB8373CD427C /* Pods_ARTalkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +319,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9B505355F890AC4BAB8671 /* Pods_ARTalk_ARTalkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +399,20 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		3B2189CFC3E5854B104AEFE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9671F179327FBBA36348F6B2 /* Pods-ARTalk.debug.xcconfig */,
+				3CFCBFAAF1C34B47E1D01BF5 /* Pods-ARTalk.release.xcconfig */,
+				7098E2389E4B0F61F1AC3A63 /* Pods-ARTalk-ARTalkUITests.debug.xcconfig */,
+				3D9AD6DEA9DAC18A5430DE06 /* Pods-ARTalk-ARTalkUITests.release.xcconfig */,
+				244D461AC8017D368C503949 /* Pods-ARTalkTests.debug.xcconfig */,
+				4FE2C5D35D2D5D043E211160 /* Pods-ARTalkTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC443A3A294FF52B009E8941 /* Zip */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +474,8 @@
 				307D1E8D2B638D68007EC3B2 /* ARTalkTests */,
 				307D1E8F2B638D68007EC3B2 /* ARTalkUITests */,
 				CC450A3F2941AD93009019BE /* Products */,
+				3B2189CFC3E5854B104AEFE0 /* Pods */,
+				EC4D08F98DD9ACB1CA4AC54D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -468,6 +501,7 @@
 				307D1EC82B638FCA007EC3B2 /* ARTalk.xcdatamodeld */,
 				307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */,
 				307D1ED82B639491007EC3B2 /* Info.plist */,
+				307D1EEC2B66094E007EC3B2 /* GoogleService-Info.plist */,
 				307D1EC32B638FC8007EC3B2 /* Main.storyboard */,
 				307D1ED22B638FEC007EC3B2 /* LaunchScreen.storyboard */,
 			);
@@ -691,6 +725,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EC4D08F98DD9ACB1CA4AC54D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4370651E47D0ADB8DD53A87A /* Pods_ARTalk.framework */,
+				448C23D9CF0C7CC8C6FE0BD4 /* Pods_ARTalk_ARTalkUITests.framework */,
+				BFCB420657605D37763FC225 /* Pods_ARTalkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -698,9 +742,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC450A672941AD94009019BE /* Build configuration list for PBXNativeTarget "ARTalk" */;
 			buildPhases = (
+				75D9D014F02B50EF1DAD9688 /* [CP] Check Pods Manifest.lock */,
 				CC450A3A2941AD93009019BE /* Sources */,
 				CC450A3B2941AD93009019BE /* Frameworks */,
 				CC450A3C2941AD93009019BE /* Resources */,
+				163131C8A38A7648722C4650 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -716,6 +762,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC450A6A2941AD94009019BE /* Build configuration list for PBXNativeTarget "ARTalkTests" */;
 			buildPhases = (
+				8459E3E87A839FAFE889368B /* [CP] Check Pods Manifest.lock */,
 				CC450A4F2941AD94009019BE /* Sources */,
 				CC450A502941AD94009019BE /* Frameworks */,
 				CC450A512941AD94009019BE /* Resources */,
@@ -734,9 +781,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC450A6D2941AD94009019BE /* Build configuration list for PBXNativeTarget "ARTalkUITests" */;
 			buildPhases = (
+				6E194C6361311595A3293F0C /* [CP] Check Pods Manifest.lock */,
 				CC450A592941AD94009019BE /* Sources */,
 				CC450A5A2941AD94009019BE /* Frameworks */,
 				CC450A5B2941AD94009019BE /* Resources */,
+				9466FBD0C986B52343C874E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -832,6 +881,7 @@
 				307D1ED32B638FEC007EC3B2 /* LaunchScreen.storyboard in Resources */,
 				CCE93217294FA45000D388A0 /* GLTFShaderModifierFragment_VRMUnlitTexture_Cutoff.shader in Resources */,
 				CCE9321E294FA45000D388A0 /* GLTFShaderModifierFragment_alphaCutoff.shader in Resources */,
+				307D1EED2B66094E007EC3B2 /* GoogleService-Info.plist in Resources */,
 				CCE9321F294FA45000D388A0 /* GLTFShaderModifierSurface_doubleSidedWorkaround.shader in Resources */,
 				CCE93213294FA45000D388A0 /* LICENSE in Resources */,
 				307D1ED12B638FCB007EC3B2 /* Assets.xcassets in Resources */,
@@ -854,6 +904,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		163131C8A38A7648722C4650 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTalk/Pods-ARTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTalk/Pods-ARTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTalk/Pods-ARTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E194C6361311595A3293F0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARTalk-ARTalkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75D9D014F02B50EF1DAD9688 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8459E3E87A839FAFE889368B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARTalkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9466FBD0C986B52343C874E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTalk-ARTalkUITests/Pods-ARTalk-ARTalkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARTalk-ARTalkUITests/Pods-ARTalk-ARTalkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARTalk-ARTalkUITests/Pods-ARTalk-ARTalkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC450A3A2941AD93009019BE /* Sources */ = {
@@ -1128,6 +1281,7 @@
 		};
 		CC450A682941AD94009019BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9671F179327FBBA36348F6B2 /* Pods-ARTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1165,6 +1319,7 @@
 		};
 		CC450A692941AD94009019BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFCBFAAF1C34B47E1D01BF5 /* Pods-ARTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1201,6 +1356,7 @@
 		};
 		CC450A6B2941AD94009019BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244D461AC8017D368C503949 /* Pods-ARTalkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1221,6 +1377,7 @@
 		};
 		CC450A6C2941AD94009019BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE2C5D35D2D5D043E211160 /* Pods-ARTalkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1241,6 +1398,7 @@
 		};
 		CC450A6E2941AD94009019BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7098E2389E4B0F61F1AC3A63 /* Pods-ARTalk-ARTalkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1259,6 +1417,7 @@
 		};
 		CC450A6F2941AD94009019BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9AD6DEA9DAC18A5430DE06 /* Pods-ARTalk-ARTalkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
