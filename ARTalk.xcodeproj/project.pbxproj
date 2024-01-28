@@ -36,7 +36,7 @@
 		307D1ECB2B638FCB007EC3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307D1EC32B638FC8007EC3B2 /* Main.storyboard */; };
 		307D1ECC2B638FCB007EC3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EC42B638FC8007EC3B2 /* AppDelegate.swift */; };
 		307D1ECD2B638FCB007EC3B2 /* AudioCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EC52B638FC9007EC3B2 /* AudioCaptureController.swift */; };
-		307D1ECF2B638FCB007EC3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EC72B638FCA007EC3B2 /* ViewController.swift */; };
+		307D1ECF2B638FCB007EC3B2 /* ARTalkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EC72B638FCA007EC3B2 /* ARTalkController.swift */; };
 		307D1ED02B638FCB007EC3B2 /* ARTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EC82B638FCA007EC3B2 /* ARTalk.xcdatamodeld */; };
 		307D1ED12B638FCB007EC3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */; };
 		307D1ED32B638FEC007EC3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307D1ED22B638FEC007EC3B2 /* LaunchScreen.storyboard */; };
@@ -183,7 +183,7 @@
 		307D1EC32B638FC8007EC3B2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		307D1EC42B638FC8007EC3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		307D1EC52B638FC9007EC3B2 /* AudioCaptureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCaptureController.swift; sourceTree = "<group>"; };
-		307D1EC72B638FCA007EC3B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		307D1EC72B638FCA007EC3B2 /* ARTalkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTalkController.swift; sourceTree = "<group>"; };
 		307D1EC92B638FCA007EC3B2 /* ARTalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ARTalk.xcdatamodel; sourceTree = "<group>"; };
 		307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		307D1ED22B638FEC007EC3B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -409,7 +409,6 @@
 				244D461AC8017D368C503949 /* Pods-ARTalkTests.debug.xcconfig */,
 				4FE2C5D35D2D5D043E211160 /* Pods-ARTalkTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -497,7 +496,7 @@
 				307D1E812B638CC5007EC3B2 /* Whisper */,
 				307D1EC42B638FC8007EC3B2 /* AppDelegate.swift */,
 				307D1EC52B638FC9007EC3B2 /* AudioCaptureController.swift */,
-				307D1EC72B638FCA007EC3B2 /* ViewController.swift */,
+				307D1EC72B638FCA007EC3B2 /* ARTalkController.swift */,
 				307D1EC82B638FCA007EC3B2 /* ARTalk.xcdatamodeld */,
 				307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */,
 				307D1ED82B639491007EC3B2 /* Info.plist */,
@@ -1042,7 +1041,7 @@
 				CC443A52294FF549009E8941 /* ZipUtilities.swift in Sources */,
 				CC443A4F294FF549009E8941 /* zip.c in Sources */,
 				CCE93227294FA45000D388A0 /* GLTFAnimationChannelTarget.swift in Sources */,
-				307D1ECF2B638FCB007EC3B2 /* ViewController.swift in Sources */,
+				307D1ECF2B638FCB007EC3B2 /* ARTalkController.swift in Sources */,
 				CCE9323B294FA45000D388A0 /* GLTFKHRMaterialsCommon_GLTFKHRMaterialsCommon.swift in Sources */,
 				CCE93247294FA45000D388A0 /* GLTFAsset.swift in Sources */,
 				CCE9323A294FA45000D388A0 /* GLTFVRM_VRMState.swift in Sources */,
