@@ -101,9 +101,8 @@ Account
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KeL-rz-5EN">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KeL-rz-5EN">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef3-6Y-gTp">
                                 <rect key="frame" x="16" y="695" width="85" height="75"/>
@@ -111,6 +110,8 @@ Account
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" imagePlacement="top" title="Record" imagePadding="6">
                                     <imageReference key="image" image="ellipsis.message" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" systemColor="systemBrownColor"/>
+                                    <color key="baseBackgroundColor" red="0.22352941179999999" green="0.18039215689999999" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="recordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DyQ-UM-MPD"/>
@@ -124,11 +125,39 @@ Account
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3K-af-Jem">
+                                <rect key="frame" x="50" y="5" width="327" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KeL-rz-5EN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4t-hH-byr"/>
+                            <constraint firstItem="KeL-rz-5EN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KWe-e2-5QU"/>
+                            <constraint firstItem="KeL-rz-5EN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O1F-dz-ALd"/>
+                            <constraint firstAttribute="bottom" secondItem="KeL-rz-5EN" secondAttribute="bottom" id="ooF-ra-FCa"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VbP-dt-oM9"/>
+                    <navigationItem key="navigationItem" id="VbP-dt-oM9">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Da0-jf-Jij">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="x0S-gw-JSR">
+                                <rect key="frame" x="317" y="0.0" width="60" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <imageReference key="image" image="clock" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" systemColor="systemBrownColor"/>
+                                    <color key="baseBackgroundColor" red="0.22352941179999999" green="0.18039215689999999" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ml0-P6-XNj" kind="presentation" id="gtN-zU-GIL"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="recordButton" destination="Ef3-6Y-gTp" id="kKO-NO-L30"/>
                         <outlet property="sceneView" destination="KeL-rz-5EN" id="cVg-4B-6rg"/>
@@ -137,7 +166,35 @@ Account
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3033" y="-75"/>
+            <point key="canvasLocation" x="3032.8244274809158" y="-75.352112676056336"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Iku-2V-Hra">
+            <objects>
+                <tableViewController id="ml0-P6-XNj" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="4kt-VY-s29">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VZO-ue-Avv">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VZO-ue-Avv" id="4EJ-wH-vzO">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ml0-P6-XNj" id="jek-Pv-XKa"/>
+                            <outlet property="delegate" destination="ml0-P6-XNj" id="dTT-mg-97i"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7CW-Ls-i7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3998" y="-75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="95B-Pb-dD6">
@@ -304,16 +361,20 @@ Welcome
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="t3T-Mi-6HO"/>
+        <segue reference="hqU-RE-t9f"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ARTalk" width="1024" height="1024"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
         <image name="ellipsis.message" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
