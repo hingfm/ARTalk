@@ -51,7 +51,18 @@ final class ARTalkUITests: XCTestCase {
     func testUserCanEnterEmailAndPassword() throws {
         app.buttons["Login"].tap()
         let emailTextField = app.textFields["Email Address"]
+        XCTAssertTrue(emailTextField.waitForExistence(timeout: 5))
+        guard emailTextField.isHittable else {
+            XCTFail("Email Address text field is not hittable")
+            return
+        }
         emailTextField.tap()
+        // Wait for the keyboard to appear
+        let keyboard = app.keyboards.element
+        guard keyboard.waitForExistence(timeout: 5) else {
+            XCTFail("Keyboard did not appear")
+            return
+        }
         emailTextField.typeText("user@example.com")
 
         let passwordTextField = app.secureTextFields["Password"]
