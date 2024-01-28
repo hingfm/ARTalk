@@ -41,6 +41,8 @@
 		307D1ED12B638FCB007EC3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */; };
 		307D1ED32B638FEC007EC3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307D1ED22B638FEC007EC3B2 /* LaunchScreen.storyboard */; };
 		307D1EED2B66094E007EC3B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 307D1EEC2B66094E007EC3B2 /* GoogleService-Info.plist */; };
+		307D1EF42B664A62007EC3B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EF32B664A62007EC3B2 /* LoginViewController.swift */; };
+		307D1EF62B664B2B007EC3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D1EF52B664B2B007EC3B2 /* ViewController.swift */; };
 		4C823FE174B4AB8373CD427C /* Pods_ARTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCB420657605D37763FC225 /* Pods_ARTalkTests.framework */; };
 		BF9B505355F890AC4BAB8671 /* Pods_ARTalk_ARTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448C23D9CF0C7CC8C6FE0BD4 /* Pods_ARTalk_ARTalkUITests.framework */; };
 		CC443A4D294FF549009E8941 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC443A3C294FF549009E8941 /* Zip.swift */; };
@@ -189,6 +191,8 @@
 		307D1ED22B638FEC007EC3B2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		307D1ED82B639491007EC3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		307D1EEC2B66094E007EC3B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		307D1EF32B664A62007EC3B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		307D1EF52B664B2B007EC3B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CFCBFAAF1C34B47E1D01BF5 /* Pods-ARTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk.release.xcconfig"; path = "Target Support Files/Pods-ARTalk/Pods-ARTalk.release.xcconfig"; sourceTree = "<group>"; };
 		3D9AD6DEA9DAC18A5430DE06 /* Pods-ARTalk-ARTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARTalk-ARTalkUITests.release.xcconfig"; path = "Target Support Files/Pods-ARTalk-ARTalkUITests/Pods-ARTalk-ARTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4370651E47D0ADB8DD53A87A /* Pods_ARTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -496,6 +500,8 @@
 				307D1E812B638CC5007EC3B2 /* Whisper */,
 				307D1EC42B638FC8007EC3B2 /* AppDelegate.swift */,
 				307D1EC52B638FC9007EC3B2 /* AudioCaptureController.swift */,
+				307D1EF52B664B2B007EC3B2 /* ViewController.swift */,
+				307D1EF32B664A62007EC3B2 /* LoginViewController.swift */,
 				307D1EC72B638FCA007EC3B2 /* ARTalkController.swift */,
 				307D1EC82B638FCA007EC3B2 /* ARTalk.xcdatamodeld */,
 				307D1ECA2B638FCB007EC3B2 /* Assets.xcassets */,
@@ -1012,6 +1018,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307D1EF42B664A62007EC3B2 /* LoginViewController.swift in Sources */,
 				CCE93215294FA45000D388A0 /* GLTFSceneSource.swift in Sources */,
 				CCE93235294FA45000D388A0 /* ExtensionList.swift in Sources */,
 				CCE9323F294FA45000D388A0 /* GLTFSkin.swift in Sources */,
@@ -1019,6 +1026,7 @@
 				307D1EC02B638F85007EC3B2 /* SIMDAliases.swift in Sources */,
 				307D1EC22B638F85007EC3B2 /* SCNNode+Extensions.swift in Sources */,
 				CCE93237294FA45000D388A0 /* GLTFVRM_VRMSpringBone.swift in Sources */,
+				307D1EF62B664B2B007EC3B2 /* ViewController.swift in Sources */,
 				CCE93245294FA45000D388A0 /* GLTFAccessorSparseValues.swift in Sources */,
 				307D1EB92B638F85007EC3B2 /* HexDump.swift in Sources */,
 				CCE93229294FA45000D388A0 /* GLTFTexture.swift in Sources */,
