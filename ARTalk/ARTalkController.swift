@@ -9,6 +9,7 @@ import UIKit
 import SceneKit
 import ARKit
 import AVFoundation
+import CoreData
 
 class ARTalkController: UIViewController {
     private var _engine: Engine?
@@ -39,14 +40,15 @@ class ARTalkController: UIViewController {
                             DispatchQueue.main.async {
                                 // Update text view with captured spoken text and make it flow from bottom to top
                                 self.textView.text = completeText
+                                self.createLog(completeText)
                                 var inset = UIEdgeInsets.zero
                                 inset.top = self.textView.bounds.size.height - self.textView.contentSize.height
                                 self.textView.contentInset = inset
 
                                 // Toggle record button state
                                 self.recordButton.setTitle("Record", for: .normal)
-                                self.recordButton.setTitleColor(UIColor.systemBlue, for: .normal)
-                                self.recordButton.tintColor = UIColor.systemBlue
+                                self.recordButton.setTitleColor(UIColor.systemBrown, for: .normal)
+                                self.recordButton.tintColor = UIColor.systemBrown
                                 self.recordButton.isHidden = false
 
                                 // Send user's command to ChatGPT
@@ -99,6 +101,22 @@ class ARTalkController: UIViewController {
     private func onCodeReceived(_ code: String) {
         // Run the code received from ChatGPT
         _engine?.runCode(code: code)
+    }
+    
+    func createLog(_ log: String){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Log", in: context)
+        let newLog = LogCoreData(entity: entity!, insertInto: context)
+        newLog.timestamp = ""
+        newLog.log = log
+        do {
+            try context.save()
+            logList.append(newLog)
+        }
+        catch {
+            print("context save error")
+        }
     }
 }
 

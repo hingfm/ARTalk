@@ -12,5 +12,5 @@ import CoreData
 public class LogCoreData: NSManagedObject {
     
     @NSManaged public var log: String?
-    @NSManaged public var timestamp: Date?
+    @NSManaged public var timestamp: String?
 }
