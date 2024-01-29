@@ -13,6 +13,7 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet var newEmail: UITextField!
     @IBOutlet var newPassword: UITextField!
+    @IBOutlet var regError: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,10 @@ class RegisterViewController: UIViewController {
                 authResult, error in
                 if let e = error {
                     //error
-                    print(e.localizedDescription)
+                    self.regError.text = e.localizedDescription
                 }else{
                     //navigation to homeViewController after register
+                    self.regError.text = ""
                     self.performSegue(withIdentifier: "registerSegue", sender: self)
                 }
             }

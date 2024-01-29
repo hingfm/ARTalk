@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
                 if let e = error {
                     self.errorLabel.text = e.localizedDescription
                 }else{
+                    self.errorLabel.text = ""
                     self.performSegue(withIdentifier: "loginAR" , sender: self)
                 }
             }

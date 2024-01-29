@@ -36,14 +36,14 @@ Account
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1J-XY-uld">
-                                <rect key="frame" x="44" y="378" width="108" height="21"/>
+                                <rect key="frame" x="44" y="368" width="108" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" restorationIdentifier="New Email" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="NrR-6c-hcq">
-                                <rect key="frame" x="44" y="407" width="305" height="34"/>
+                                <rect key="frame" x="44" y="397" width="305" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <accessibility key="accessibilityConfiguration" identifier="New Email"/>
@@ -52,14 +52,14 @@ Account
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-pg-vj5">
-                                <rect key="frame" x="44" y="458" width="74" height="21"/>
+                                <rect key="frame" x="44" y="448" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" restorationIdentifier="New Password" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="vEE-8N-Ybj">
-                                <rect key="frame" x="44" y="487" width="305" height="34"/>
+                                <rect key="frame" x="44" y="477" width="305" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <accessibility key="accessibilityConfiguration" identifier="New Password"/>
@@ -68,7 +68,7 @@ Account
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJv-Sw-wGg">
-                                <rect key="frame" x="53" y="600" width="287" height="50"/>
+                                <rect key="frame" x="53" y="610" width="287" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.66666666669999997" green="0.5450980392" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -80,6 +80,13 @@ Account
                                     <action selector="registerBtn:" destination="NrE-1g-7Hz" eventType="touchUpInside" id="0YD-7h-pnw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIN-i3-lAc">
+                                <rect key="frame" x="48" y="510" width="296" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.92156863209999995" green="0.44313728810000003" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VcL-mH-gXs"/>
                         <color key="backgroundColor" red="0.2235293984" green="0.19607841970000001" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -88,6 +95,7 @@ Account
                     <connections>
                         <outlet property="newEmail" destination="NrR-6c-hcq" id="8b3-uH-4Q7"/>
                         <outlet property="newPassword" destination="vEE-8N-Ybj" id="aO9-Pe-EAM"/>
+                        <outlet property="regError" destination="wIN-i3-lAc" id="dqV-yt-ag6"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="registerSegue" id="t3T-Mi-6HO"/>
                     </connections>
                 </viewController>
@@ -404,7 +412,7 @@ Welcome
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hqU-RE-t9f"/>
+        <segue reference="t3T-Mi-6HO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ARTalk" width="1024" height="1024"/>
