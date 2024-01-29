@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var emailAddress: UITextField!
     @IBOutlet var password: UITextField!
+    @IBOutlet var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,7 @@ class LoginViewController: UIViewController {
             FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password){
                 authResult, error in
                 if let e = error {
-                    print(e.localizedDescription)
+                    self.errorLabel.text = e.localizedDescription
                 }else{
                     self.performSegue(withIdentifier: "loginAR" , sender: self)
                 }
